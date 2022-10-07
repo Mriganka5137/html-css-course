@@ -1,27 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #444;
+  font-family: sans-serif;
+
+  border-top: solid 15px #1098ad;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+article {
+  margin-left: 20px;
+  margin-bottom: 60px;
+}
+
+.main-header {
+  background-color: #f7f7f7;
+  padding: 30px 20px;
+  margin-bottom: 40px;
+}
+
+.main-nav a {
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+.article-header {
+  margin-bottom: 40px;
+}
+
+.post-img {
+  width: 100%;
+  height: auto;
+}
+
+aside {
+  padding: 60px 0;
+  background-color: #f7f7f7;
+  border-bottom: 5px solid #1098ad;
+  border-top: 5px solid #1098ad;
+}
+
+h1,
+h2,
+h3 {
+  color: #1098ad;
+}
+
 h1 {
   font-size: 26px;
-  font-family: sans-serif;
   font-style: italic;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 h2 {
   font-size: 40px;
-  font-family: sans-serif;
+  margin-bottom: 20px;
 }
 
 h3 {
   font-size: 30px;
-  font-family: sans-serif;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+h4 {
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 p {
   font-size: 22px;
-  font-family: sans-serif;
   line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+ul,
+ol {
+  margin-left: 80px;
+  margin-bottom: 20px;
 }
 
 li {
   font-size: 20px;
-  font-family: sans-serif;
+  margin-bottom: 10px;
+}
+
+li:last-child {
+  margin-bottom: 0;
+}
+
+/* Conflicting Selectors */
+/* !important > inline > #id > .class > p > *  */
+/* If same kind of selectors are conflicted, one with the last will be applied */
+
+#copyright {
+  font-size: 16px;
+  color: #1098ad;
+}
+
+.copyright {
+  color: red;
+}
+
+.text {
+  color: green;
+}
+
+/* footer p {
+  color: pink !important;
+} */
+
+/* Conflicting Selector */
+
+#author {
+  font-style: italic;
+  font-size: 18px;
+}
+
+.author-related {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.related-posts {
+  list-style: none;
+}
+
+/* li:first-child {
+  color: #1098ad;
+  font-weight: bold;
+} */
+
+/* article p:last-child {
+  color: red;
+} */
+
+/* Styling Links  LVHA*/
+
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #1098ad;
+}
+
+a:hover {
+  color: orangered;
+  text-decoration: underline orangered;
+  font-weight: bold;
+}
+
+a:active {
+  background-color: black;
+  font-style: italic;
 }
